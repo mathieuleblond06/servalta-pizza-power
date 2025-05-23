@@ -34,7 +34,7 @@ const Features = () => {
             Transformación Digital <span className="gradient-text">Inmediata</span>
           </h2>
           <p className="section-subtitle animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Tu pizzería necesita más que un simple sistema de cobro. Servalta POS es una plataforma completa de gestión que revoluciona cada aspecto de tu negocio.
+            Tu restaurante necesita más que un simple sistema de cobro. Servalta POS es una plataforma completa de gestión que revoluciona cada aspecto de tu negocio.
           </p>
         </div>
         

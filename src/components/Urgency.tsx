@@ -41,7 +41,7 @@ const Urgency = () => {
           </div>
           
           <p className="text-gray-300 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            Las pizzerías que implementan Servalta POS informan un <span className="font-bold text-white">aumento promedio del 28% en ventas</span> y una <span className="font-bold text-white">reducción del 45% en errores operativos</span> en los primeros 90 días.
+            Los restaurantes que implementan Servalta POS informan un <span className="font-bold text-white">aumento promedio del 28% en ventas</span> y una <span className="font-bold text-white">reducción del 45% en errores operativos</span> en los primeros 90 días.
           </p>
           
           <div className="animate-fade-in" style={{ animationDelay: '0.7s' }}>

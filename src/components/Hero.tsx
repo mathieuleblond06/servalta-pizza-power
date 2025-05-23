@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { Play } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -8,28 +9,29 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in tracking-tight">
-              Revoluciona tu <span className="gradient-text">Pizzería</span> con Servalta POS
+              Revoluciona tu <span className="gradient-text">Restaurante</span> con Servalta POS
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              El sistema de punto de venta diseñado específicamente para pizzerías mexicanas. Optimiza tus operaciones, aumenta las ventas y mejora la experiencia del cliente.
+              El sistema de punto de venta diseñado específicamente para restaurantes mexicanos. Optimiza tus operaciones, aumenta las ventas y mejora la experiencia del cliente.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <Button size="lg" className="bg-servalta-red hover:bg-servalta-red/90 rounded-full px-8 py-6">
+              <Button size="lg" className="bg-servalta-red hover:bg-servalta-red/90 rounded-full px-8 py-6 w-full sm:w-auto">
                 Demostración Gratuita
               </Button>
-              <Button variant="outline" size="lg" className="rounded-full px-8 py-6">
+              <Button variant="outline" size="lg" className="rounded-full px-8 py-6 flex items-center gap-2 w-full sm:w-auto">
+                <Play className="h-4 w-4" />
                 Ver Video
               </Button>
             </div>
             <p className="text-sm text-gray-500 mt-6 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              Diseñado por expertos en pizzerías <span className="text-servalta-red font-bold">|</span> Soporte local 24/7
+              Diseñado por expertos gastronómicos <span className="text-servalta-red font-bold">|</span> Soporte local 24/7
             </p>
           </div>
           <div className="w-full lg:w-1/2 relative">
             <div className="relative z-10 animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9" 
-                alt="Servalta POS para Pizzerías" 
+                src="https://images.unsplash.com/photo-1562967914-608f82629710" 
+                alt="Servalta POS para Restaurantes" 
                 className="rounded-2xl shadow-2xl mx-auto"
               />
               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white p-3 rounded-xl shadow-lg flex items-center gap-3 animate-fade-in-slow">

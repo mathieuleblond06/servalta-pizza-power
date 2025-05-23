@@ -68,21 +68,21 @@ const ModuleShowcase = () => {
       <div className="container-tight">
         <div className="text-center mb-16">
           <h2 className="section-title animate-fade-in">
-            Una Suite <span className="gradient-text">Completa</span> para tu Pizzería
+            Una Suite <span className="gradient-text">Completa</span> para tu Restaurante
           </h2>
           <p className="section-subtitle animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Servalta POS integra todos los aspectos de la operación de tu pizzería en una sola plataforma potente y fácil de usar.
+            Servalta POS integra todos los aspectos de la operación de tu restaurante en una sola plataforma potente y fácil de usar.
           </p>
         </div>
         
         <div className="mt-12">
           <Tabs defaultValue="dashboard" value={activeTab} onValueChange={setActiveTab} className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-4 gap-2 bg-transparent">
+            <TabsList className="grid grid-cols-2 md:grid-cols-4 gap-2 bg-transparent mb-6 overflow-x-auto max-w-full">
               {modules.map(module => (
                 <TabsTrigger 
                   key={module.id} 
                   value={module.id}
-                  className="data-[state=active]:bg-servalta-dark data-[state=active]:text-white rounded-lg py-3"
+                  className="data-[state=active]:bg-servalta-dark data-[state=active]:text-white rounded-lg py-3 whitespace-nowrap"
                 >
                   {module.title}
                 </TabsTrigger>
@@ -91,7 +91,7 @@ const ModuleShowcase = () => {
             
             <div className="mt-8">
               <div className="flex flex-col lg:flex-row items-center gap-8">
-                <div className="w-full lg:w-1/2 animate-slide-right">
+                <div className="w-full lg:w-1/2 order-2 lg:order-1 animate-slide-right">
                   <h3 className="text-2xl md:text-3xl font-bold mb-2">{currentModule.title}</h3>
                   <p className="text-servalta-red font-medium mb-4">{currentModule.subtitle}</p>
                   <p className="text-gray-600 mb-6">{currentModule.description}</p>
@@ -112,7 +112,7 @@ const ModuleShowcase = () => {
                   </Button>
                 </div>
                 
-                <div className="w-full lg:w-1/2 animate-slide-left">
+                <div className="w-full lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0 animate-slide-left">
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                     <img 
                       src={currentModule.image} 

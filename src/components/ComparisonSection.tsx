@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const ComparisonSection = () => {
   const comparisonData = [
     {
-      feature: "Diseñado específicamente para pizzerías mexicanas",
+      feature: "Diseñado específicamente para restaurantes mexicanos",
       servalta: true,
       others: false
     },
@@ -15,7 +15,7 @@ const ComparisonSection = () => {
       others: true
     },
     {
-      feature: "Gestión de ingredientes y variantes de pizzas",
+      feature: "Gestión de ingredientes y variantes de platillos",
       servalta: true,
       others: false
     },
@@ -54,12 +54,12 @@ const ComparisonSection = () => {
             ¿Por qué elegir <span className="gradient-text">Servalta</span>?
           </h2>
           <p className="section-subtitle animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            No todos los sistemas POS son iguales. Descubre por qué las pizzerías mexicanas más exitosas confían en Servalta.
+            No todos los sistemas POS son iguales. Descubre por qué los restaurantes mexicanos más exitosos confían en Servalta.
           </p>
         </div>
         
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-zoom-in" style={{ animationDelay: '0.3s' }}>
-          <div className="grid grid-cols-3 text-center py-4 border-b">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-zoom-in overflow-x-auto" style={{ animationDelay: '0.3s' }}>
+          <div className="grid grid-cols-3 text-center py-4 border-b min-w-[600px]">
             <div className="col-span-1">
               <span className="font-medium text-gray-600">Características</span>
             </div>
@@ -71,7 +71,7 @@ const ComparisonSection = () => {
             </div>
           </div>
           
-          <div className="divide-y">
+          <div className="divide-y min-w-[600px]">
             {comparisonData.map((item, index) => (
               <div key={index} className="grid grid-cols-3 py-4 text-center items-center">
                 <div className="col-span-1 px-4 text-left">
@@ -96,7 +96,7 @@ const ComparisonSection = () => {
           </div>
           
           <div className="bg-servalta-gray/30 py-6 px-6 text-center">
-            <p className="mb-4 font-medium">Servalta POS está diseñado específicamente para las necesidades de las pizzerías mexicanas</p>
+            <p className="mb-4 font-medium">Servalta POS está diseñado específicamente para las necesidades de los restaurantes mexicanos</p>
             <Button className="bg-servalta-red hover:bg-servalta-red/90 rounded-full">
               Obtén tu demostración exclusiva
             </Button>

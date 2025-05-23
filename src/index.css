@@ -133,3 +133,16 @@
     margin: 0 auto;
   }
 }
+
+/* Fix for TabsList on mobile */
+@media (max-width: 768px) {
+  [role="tablist"] {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  [role="tablist"]::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari and Opera */
+  }
+}

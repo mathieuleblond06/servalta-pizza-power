@@ -2,23 +2,23 @@
 const testimonials = [
   {
     id: 1,
-    quote: "Desde que implementamos Servalta POS, nuestro tiempo de preparación se redujo un 35% y nuestras ventas aumentaron un 28%. La capacidad de gestionar fácilmente variantes de pizzas y personalizar pedidos ha transformado nuestro negocio.",
+    quote: "Desde que implementamos Servalta POS, nuestro tiempo de preparación se redujo un 35% y nuestras ventas aumentaron un 28%. La capacidad de gestionar fácilmente variantes de platillos y personalizar pedidos ha transformado nuestro negocio.",
     author: "Miguel Rodríguez",
-    position: "Propietario, Pizzería La Napolitana",
+    position: "Propietario, Restaurante La Costera",
     location: "Ciudad de México"
   },
   {
     id: 2,
     quote: "El sistema QR ha sido un éxito rotundo entre nuestros clientes jóvenes. Ya no gastamos en imprimir menús y podemos cambiar nuestras ofertas diarias en segundos. El soporte local 24/7 ha sido invaluable.",
     author: "Ana González",
-    position: "Gerente, Pizza Express",
+    position: "Gerente, La Cantina Mexicana",
     location: "Guadalajara"
   },
   {
     id: 3,
     quote: "La facilidad de uso es impresionante. Capacitar al personal nuevo solía tomar días, ahora toma horas. El dashboard nos da información valiosa sobre tendencias de clientes que nos ayuda a planificar mejor nuestras promociones.",
     author: "Carlos Vega",
-    position: "Dueño, Pizzas del Rey",
+    position: "Dueño, Sabores del Mar",
     location: "Monterrey"
   }
 ];
@@ -32,7 +32,7 @@ const Testimonials = () => {
             Voces de <span className="text-servalta-red">Éxito</span>
           </h2>
           <p className="section-subtitle text-gray-300 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Escucha lo que dicen los propietarios de pizzerías que ya están utilizando Servalta POS.
+            Escucha lo que dicen los propietarios de restaurantes que ya están utilizando Servalta POS.
           </p>
         </div>
         

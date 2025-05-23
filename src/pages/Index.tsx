@@ -10,10 +10,12 @@ import ComparisonSection from "@/components/ComparisonSection";
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import PricingSection from "@/components/PricingSection";
+import FAQSection from "@/components/FAQSection";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Servalta POS | La Revolución Digital para Pizzerías";
+    document.title = "Servalta POS | La Revolución Digital para Restaurantes";
   }, []);
 
   return (
@@ -26,6 +28,8 @@ const Index = () => {
       <Urgency />
       <ComparisonSection />
       <Testimonials />
+      <PricingSection />
+      <FAQSection />
       <CTASection />
       <Footer />
     </main>

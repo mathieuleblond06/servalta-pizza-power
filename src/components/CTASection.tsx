@@ -88,7 +88,7 @@ const CTASection = () => {
                     </div>
                     <div>
                       <label htmlFor="business" className="block text-sm font-medium text-gray-700 mb-1">
-                        Nombre de tu pizzería
+                        Nombre de tu restaurante
                       </label>
                       <input
                         type="text"
