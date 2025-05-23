@@ -47,61 +47,62 @@ const ComparisonSection = () => {
   ];
 
   return (
-    <section id="why-us" className="py-20 bg-servalta-gray">
-      <div className="container-tight">
-        <div className="text-center mb-16">
-          <h2 className="section-title animate-fade-in">
+    <section id="why-us" className="py-12 sm:py-16 bg-servalta-gray overflow-hidden">
+      <div className="container-tight px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="section-title animate-fade-in text-xl sm:text-2xl md:text-3xl">
             ¿Por qué elegir <span className="gradient-text">Servalta</span>?
           </h2>
-          <p className="section-subtitle animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="section-subtitle animate-fade-in text-sm sm:text-base" style={{ animationDelay: '0.2s' }}>
             No todos los sistemas POS son iguales. Descubre por qué los restaurantes mexicanos más exitosos confían en Servalta.
           </p>
         </div>
         
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-zoom-in" style={{ animationDelay: '0.3s' }}>
+        <div className="bg-white rounded-lg sm:rounded-2xl shadow-xl overflow-hidden animate-zoom-in" style={{ animationDelay: '0.3s' }}>
           <div className="overflow-x-auto">
-            <div className="min-w-[600px]">
-              <div className="grid grid-cols-3 text-center py-4 border-b">
-                <div className="col-span-1">
-                  <span className="font-medium text-gray-600">Características</span>
-                </div>
-                <div className="col-span-1 border-x">
-                  <span className="font-bold text-servalta-red">Servalta POS</span>
-                </div>
-                <div className="col-span-1">
-                  <span className="font-medium text-gray-600">Otros sistemas</span>
-                </div>
-              </div>
-              
-              <div className="divide-y">
+            <table className="w-full min-w-[300px]">
+              <thead>
+                <tr className="text-center border-b">
+                  <th className="py-3 px-2 sm:px-4 text-left text-xs sm:text-sm font-medium text-gray-600 w-1/2">
+                    Características
+                  </th>
+                  <th className="py-3 px-2 sm:px-4 border-x text-center text-xs sm:text-sm font-bold text-servalta-red w-1/4">
+                    Servalta POS
+                  </th>
+                  <th className="py-3 px-2 sm:px-4 text-center text-xs sm:text-sm font-medium text-gray-600 w-1/4">
+                    Otros sistemas
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y">
                 {comparisonData.map((item, index) => (
-                  <div key={index} className="grid grid-cols-3 py-4 text-center items-center">
-                    <div className="col-span-1 px-4 text-left">
-                      <span className="text-sm md:text-base">{item.feature}</span>
-                    </div>
-                    <div className="col-span-1 border-x">
+                  <tr key={index} className="text-center">
+                    <td className="py-3 px-2 sm:px-4 text-left text-xs sm:text-sm">
+                      {item.feature}
+                    </td>
+                    <td className="py-3 px-2 sm:px-4 border-x">
                       {item.servalta ? (
-                        <Check className="mx-auto h-5 w-5 text-servalta-green" />
+                        <Check className="mx-auto h-4 w-4 sm:h-5 sm:w-5 text-servalta-green" />
                       ) : (
-                        <X className="mx-auto h-5 w-5 text-servalta-red" />
+                        <X className="mx-auto h-4 w-4 sm:h-5 sm:w-5 text-servalta-red" />
                       )}
-                    </div>
-                    <div className="col-span-1">
+                    </td>
+                    <td className="py-3 px-2 sm:px-4">
                       {item.others ? (
-                        <Check className="mx-auto h-5 w-5 text-servalta-green" />
+                        <Check className="mx-auto h-4 w-4 sm:h-5 sm:w-5 text-servalta-green" />
                       ) : (
-                        <X className="mx-auto h-5 w-5 text-gray-400" />
+                        <X className="mx-auto h-4 w-4 sm:h-5 sm:w-5 text-gray-400" />
                       )}
-                    </div>
-                  </div>
+                    </td>
+                  </tr>
                 ))}
-              </div>
-            </div>
+              </tbody>
+            </table>
           </div>
           
-          <div className="bg-servalta-gray/30 py-6 px-6 text-center">
-            <p className="mb-4 font-medium text-sm md:text-base">Servalta POS está diseñado específicamente para las necesidades de los restaurantes mexicanos</p>
-            <Button className="bg-servalta-red hover:bg-servalta-red/90 rounded-full w-full sm:w-auto">
+          <div className="bg-servalta-gray/30 py-4 sm:py-6 px-4 sm:px-6 text-center">
+            <p className="mb-3 sm:mb-4 font-medium text-xs sm:text-sm">Servalta POS está diseñado específicamente para las necesidades de los restaurantes mexicanos</p>
+            <Button className="bg-servalta-red hover:bg-servalta-red/90 rounded-full text-xs sm:text-sm py-2 h-auto w-full sm:w-auto">
               Obtén tu demostración exclusiva
             </Button>
           </div>
