@@ -77,17 +77,19 @@ const ModuleShowcase = () => {
         
         <div className="mt-12">
           <Tabs defaultValue="dashboard" value={activeTab} onValueChange={setActiveTab} className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-4 gap-2 bg-transparent mb-6 overflow-x-auto max-w-full">
-              {modules.map(module => (
-                <TabsTrigger 
-                  key={module.id} 
-                  value={module.id}
-                  className="data-[state=active]:bg-servalta-dark data-[state=active]:text-white rounded-lg py-3 whitespace-nowrap"
-                >
-                  {module.title}
-                </TabsTrigger>
-              ))}
-            </TabsList>
+            <div className="overflow-x-auto pb-2">
+              <TabsList className="inline-flex w-auto min-w-full md:grid md:grid-cols-4 gap-2 bg-transparent mb-6">
+                {modules.map(module => (
+                  <TabsTrigger 
+                    key={module.id} 
+                    value={module.id}
+                    className="data-[state=active]:bg-servalta-dark data-[state=active]:text-white rounded-lg py-3 px-4 whitespace-nowrap flex-shrink-0 min-w-[120px]"
+                  >
+                    {module.title}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
             
             <div className="mt-8">
               <div className="flex flex-col lg:flex-row items-center gap-8">

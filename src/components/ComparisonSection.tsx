@@ -58,46 +58,50 @@ const ComparisonSection = () => {
           </p>
         </div>
         
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-zoom-in overflow-x-auto" style={{ animationDelay: '0.3s' }}>
-          <div className="grid grid-cols-3 text-center py-4 border-b min-w-[600px]">
-            <div className="col-span-1">
-              <span className="font-medium text-gray-600">Características</span>
-            </div>
-            <div className="col-span-1 border-x">
-              <span className="font-bold text-servalta-red">Servalta POS</span>
-            </div>
-            <div className="col-span-1">
-              <span className="font-medium text-gray-600">Otros sistemas</span>
-            </div>
-          </div>
-          
-          <div className="divide-y min-w-[600px]">
-            {comparisonData.map((item, index) => (
-              <div key={index} className="grid grid-cols-3 py-4 text-center items-center">
-                <div className="col-span-1 px-4 text-left">
-                  <span className="text-sm md:text-base">{item.feature}</span>
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-zoom-in" style={{ animationDelay: '0.3s' }}>
+          <div className="overflow-x-auto">
+            <div className="min-w-[600px]">
+              <div className="grid grid-cols-3 text-center py-4 border-b">
+                <div className="col-span-1">
+                  <span className="font-medium text-gray-600">Características</span>
                 </div>
                 <div className="col-span-1 border-x">
-                  {item.servalta ? (
-                    <Check className="mx-auto h-5 w-5 text-servalta-green" />
-                  ) : (
-                    <X className="mx-auto h-5 w-5 text-servalta-red" />
-                  )}
+                  <span className="font-bold text-servalta-red">Servalta POS</span>
                 </div>
                 <div className="col-span-1">
-                  {item.others ? (
-                    <Check className="mx-auto h-5 w-5 text-servalta-green" />
-                  ) : (
-                    <X className="mx-auto h-5 w-5 text-gray-400" />
-                  )}
+                  <span className="font-medium text-gray-600">Otros sistemas</span>
                 </div>
               </div>
-            ))}
+              
+              <div className="divide-y">
+                {comparisonData.map((item, index) => (
+                  <div key={index} className="grid grid-cols-3 py-4 text-center items-center">
+                    <div className="col-span-1 px-4 text-left">
+                      <span className="text-sm md:text-base">{item.feature}</span>
+                    </div>
+                    <div className="col-span-1 border-x">
+                      {item.servalta ? (
+                        <Check className="mx-auto h-5 w-5 text-servalta-green" />
+                      ) : (
+                        <X className="mx-auto h-5 w-5 text-servalta-red" />
+                      )}
+                    </div>
+                    <div className="col-span-1">
+                      {item.others ? (
+                        <Check className="mx-auto h-5 w-5 text-servalta-green" />
+                      ) : (
+                        <X className="mx-auto h-5 w-5 text-gray-400" />
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
           
           <div className="bg-servalta-gray/30 py-6 px-6 text-center">
-            <p className="mb-4 font-medium">Servalta POS está diseñado específicamente para las necesidades de los restaurantes mexicanos</p>
-            <Button className="bg-servalta-red hover:bg-servalta-red/90 rounded-full">
+            <p className="mb-4 font-medium text-sm md:text-base">Servalta POS está diseñado específicamente para las necesidades de los restaurantes mexicanos</p>
+            <Button className="bg-servalta-red hover:bg-servalta-red/90 rounded-full w-full sm:w-auto">
               Obtén tu demostración exclusiva
             </Button>
           </div>
