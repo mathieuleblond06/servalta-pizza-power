@@ -12,17 +12,23 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
+import ProductShowcase from "@/components/ProductShowcase";
+import StatsSection from "@/components/StatsSection";
+import ProcessSection from "@/components/ProcessSection";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Servalta POS | La Revolución Digital para Restaurantes";
+    document.title = "Servalta POS | Revoluciona tu Restaurante con Tecnología Inteligente";
   }, []);
 
   return (
     <main className="min-h-screen overflow-x-hidden">
       <Navbar />
       <Hero />
+      <StatsSection />
       <Features />
+      <ProductShowcase />
+      <ProcessSection />
       <ModuleShowcase />
       <QRFeature />
       <Urgency />
