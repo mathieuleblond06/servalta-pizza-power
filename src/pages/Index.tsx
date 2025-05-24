@@ -15,6 +15,7 @@ import FAQSection from "@/components/FAQSection";
 import ProductShowcase from "@/components/ProductShowcase";
 import StatsSection from "@/components/StatsSection";
 import ProcessSection from "@/components/ProcessSection";
+import PolotabInspiredSection from "@/components/PolotabInspiredSection";
 
 const Index = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const Index = () => {
     <main className="min-h-screen overflow-x-hidden">
       <Navbar />
       <Hero />
+      <PolotabInspiredSection />
       <StatsSection />
       <Features />
       <ProductShowcase />

@@ -89,7 +89,7 @@ export default {
 					to: { height: '0', opacity: '0' }
 				},
 				'fade-in': {
-					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
 				'fade-in-slow': {
@@ -97,16 +97,24 @@ export default {
 					'100%': { opacity: '1' }
 				},
 				'slide-in': {
-					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'0%': { transform: 'translateY(30px)', opacity: '0' },
 					'100%': { transform: 'translateY(0)', opacity: '1' }
 				},
 				'zoom-in': {
-					'0%': { transform: 'scale(0.95)', opacity: '0' },
+					'0%': { transform: 'scale(0.8)', opacity: '0' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'scale-in': {
+					'0%': { transform: 'scale(0.9)', opacity: '0' },
 					'100%': { transform: 'scale(1)', opacity: '1' }
 				},
 				'float': {
-					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-10px)' }
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'50%': { transform: 'translateY(-20px) rotate(2deg)' }
+				},
+				'float-delayed': {
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'50%': { transform: 'translateY(-15px) rotate(-2deg)' }
 				},
 				'slide-left': {
 					'0%': { transform: 'translateX(100%)', opacity: '0' },
@@ -115,18 +123,64 @@ export default {
 				'slide-right': {
 					'0%': { transform: 'translateX(-100%)', opacity: '0' },
 					'100%': { transform: 'translateX(0)', opacity: '1' }
+				},
+				'bounce-in': {
+					'0%': { transform: 'scale(0.3)', opacity: '0' },
+					'50%': { transform: 'scale(1.1)', opacity: '0.8' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
+				},
+				'pulse-strong': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.1)' }
+				},
+				'gradient-shift': {
+					'0%, 100%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' }
+				},
+				'text-glow': {
+					'0%, 100%': { textShadow: '0 0 20px rgba(59, 130, 246, 0.5)' },
+					'50%': { textShadow: '0 0 40px rgba(59, 130, 246, 0.8), 0 0 60px rgba(147, 51, 234, 0.6)' }
+				},
+				'rotate-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
+				},
+				'bounce-gentle': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'swing': {
+					'0%, 100%': { transform: 'rotate(0deg)' },
+					'20%': { transform: 'rotate(15deg)' },
+					'40%': { transform: 'rotate(-10deg)' },
+					'60%': { transform: 'rotate(5deg)' },
+					'80%': { transform: 'rotate(-5deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.6s ease-out',
-				'fade-in-slow': 'fade-in-slow 1.2s ease-out',
-				'slide-in': 'slide-in 0.6s ease-out',
+				'fade-in': 'fade-in 0.8s ease-out',
+				'fade-in-slow': 'fade-in-slow 1.5s ease-out',
+				'slide-in': 'slide-in 0.8s ease-out',
 				'zoom-in': 'zoom-in 0.6s ease-out',
-				'float': 'float 4s ease-in-out infinite',
-				'slide-left': 'slide-left 0.8s ease-out',
-				'slide-right': 'slide-right 0.8s ease-out'
+				'scale-in': 'scale-in 0.5s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'float-delayed': 'float-delayed 6s ease-in-out infinite 2s',
+				'slide-left': 'slide-left 1s ease-out',
+				'slide-right': 'slide-right 1s ease-out',
+				'bounce-in': 'bounce-in 0.6s ease-out',
+				'wiggle': 'wiggle 1s ease-in-out infinite',
+				'pulse-strong': 'pulse-strong 2s ease-in-out infinite',
+				'gradient-shift': 'gradient-shift 3s ease infinite',
+				'text-glow': 'text-glow 2s ease-in-out infinite',
+				'rotate-slow': 'rotate-slow 20s linear infinite',
+				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite',
+				'swing': 'swing 2s ease-in-out infinite'
 			}
 		}
 	},
