@@ -1,31 +1,646 @@
 
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Servalta POS | La Revolución Digital para Pizzerías</title>
-    <meta name="description" content="Sistema POS revolucionario diseñado específicamente para pizzerías mexicanas. Transforme su operación con Servalta." />
-    <meta name="author" content="Servalta" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servalta POS | El Sistema de Punto de Venta Líder para Restaurantes</title>
+    <meta name="description" content="Revoluciona tu restaurante con Servalta POS. Sistema completo de gestión para restaurantes con menús digitales, control de inventario y análisis en tiempo real.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Servalta<span class="brand-accent">POS</span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Características</a>
+                <a href="#modules" class="nav-link">Módulos</a>
+                <a href="#why-us" class="nav-link">¿Por qué nosotros?</a>
+                <a href="#testimonials" class="nav-link">Testimonios</a>
+                <a href="#pricing" class="nav-link">Planes</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+                <a href="#demo" class="btn btn-primary btn-sm">Demo Gratis</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <meta property="og:title" content="Servalta POS | La Revolución Digital para Pizzerías" />
-    <meta property="og:description" content="Sistema POS revolucionario diseñado específicamente para pizzerías mexicanas. Transforme su operación con Servalta." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        El Sistema POS que <span class="gradient-text">Revoluciona</span> tu Restaurante
+                    </h1>
+                    <p class="hero-subtitle">
+                        Gestiona pedidos, inventario, personal y finanzas desde una sola plataforma. 
+                        Diseñado específicamente para restaurantes mexicanos con todo lo que necesitas para crecer.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#demo" class="btn btn-primary btn-lg">Prueba Gratis por 30 Días</a>
+                        <a href="#video" class="btn btn-outline btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                            </svg>
+                            Ver Video
+                        </a>
+                    </div>
+                    <p class="hero-note">
+                        Sin contratos • Implementación en 48 horas • Soporte 24/7
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Restaurante moderno con tecnología POS">
+                    <div class="hero-badge">
+                        <div class="status-indicator"></div>
+                        <span>Sistema en línea</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@servalta_pos" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  </head>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Más que un POS, es tu <span class="gradient-text">Socio Digital</span>
+                </h2>
+                <p class="section-subtitle">
+                    Desde la toma de pedidos hasta el análisis de ventas, Servalta POS integra cada aspecto de tu operación en una plataforma intuitiva y poderosa.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon sales">
+                        <span>+35%</span>
+                    </div>
+                    <h3>Aumenta tus Ventas</h3>
+                    <p>Incremento promedio en ventas con recomendaciones inteligentes y promociones automáticas basadas en datos reales.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon efficiency">
+                        <span>-50%</span>
+                    </div>
+                    <h3>Reduce Errores</h3>
+                    <p>Menos errores operativos con procesos automatizados y comunicación directa entre cocina y salón.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon loyalty">
+                        <span>+80%</span>
+                    </div>
+                    <h3>Fideliza Clientes</h3>
+                    <p>Mayor retención de clientes con programas de lealtad personalizados y experiencias sin fricción.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Modules Section -->
+    <section id="modules" class="modules">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Una Suite <span class="gradient-text">Completa</span> para tu Restaurante
+                </h2>
+                <p class="section-subtitle">
+                    Cada módulo está diseñado para trabajar en perfecta armonía, creando un ecosistema digital que potencia cada aspecto de tu negocio.
+                </p>
+            </div>
+
+            <div class="modules-container">
+                <div class="modules-tabs">
+                    <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+                    <button class="tab-btn" data-tab="pos">POS</button>
+                    <button class="tab-btn" data-tab="kitchen">Cocina</button>
+                    <button class="tab-btn" data-tab="orders">Órdenes</button>
+                </div>
+
+                <div class="tab-content active" id="dashboard">
+                    <div class="module-content">
+                        <div class="module-text">
+                            <h3>Dashboard Inteligente</h3>
+                            <p class="module-subtitle">Tu centro de comando en tiempo real</p>
+                            <p class="module-description">
+                                Visualiza el pulso de tu restaurante con métricas clave: ventas en vivo, productos estrella, 
+                                tendencias de clientes y proyecciones de ingresos. Todo en una interfaz clara e intuitiva.
+                            </p>
+                            <ul class="module-features">
+                                <li>Métricas en tiempo real</li>
+                                <li>Reportes automáticos</li>
+                                <li>Análisis predictivo</li>
+                                <li>Acceso móvil completo</li>
+                            </ul>
+                            <button class="btn btn-primary">Ver Demo</button>
+                        </div>
+                        <div class="module-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dashboard de restaurante">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="pos">
+                    <div class="module-content">
+                        <div class="module-text">
+                            <h3>Sistema POS Avanzado</h3>
+                            <p class="module-subtitle">Control total de tus operaciones</p>
+                            <p class="module-description">
+                                Procesa pedidos con velocidad profesional. Personaliza órdenes, divide cuentas, 
+                                aplica descuentos y acepta múltiples formas de pago desde una interfaz súper intuitiva.
+                            </p>
+                            <ul class="module-features">
+                                <li>Procesamiento ultra-rápido</li>
+                                <li>Personalización avanzada</li>
+                                <li>Múltiples métodos de pago</li>
+                                <li>División inteligente de cuentas</li>
+                            </ul>
+                            <button class="btn btn-primary">Ver Demo</button>
+                        </div>
+                        <div class="module-image">
+                            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sistema POS en tablet">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="kitchen">
+                    <div class="module-content">
+                        <div class="module-text">
+                            <h3>Display de Cocina</h3>
+                            <p class="module-subtitle">Sincronización perfecta</p>
+                            <p class="module-description">
+                                Tu equipo de cocina siempre actualizado con órdenes en tiempo real, tiempos de preparación 
+                                y notificaciones automáticas. Mejora la comunicación y reduce los tiempos de espera.
+                            </p>
+                            <ul class="module-features">
+                                <li>Órdenes en tiempo real</li>
+                                <li>Tiempos de preparación</li>
+                                <li>Alertas automáticas</li>
+                                <li>Gestión de prioridades</li>
+                            </ul>
+                            <button class="btn btn-primary">Ver Demo</button>
+                        </div>
+                        <div class="module-image">
+                            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Cocina de restaurante moderna">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="orders">
+                    <div class="module-content">
+                        <div class="module-text">
+                            <h3>Gestión de Órdenes</h3>
+                            <p class="module-subtitle">Control total del flujo</p>
+                            <p class="module-description">
+                                Rastrea cada pedido desde su creación hasta su entrega. Visualiza estados, 
+                                tiempos estimados y mantén a tu equipo y clientes siempre informados.
+                            </p>
+                            <ul class="module-features">
+                                <li>Seguimiento completo</li>
+                                <li>Estados en tiempo real</li>
+                                <li>Notificaciones automáticas</li>
+                                <li>Historial detallado</li>
+                            </ul>
+                            <button class="btn btn-primary">Ver Demo</button>
+                        </div>
+                        <div class="module-image">
+                            <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Gestión de pedidos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Feature Section -->
+    <section class="qr-feature">
+        <div class="container">
+            <div class="qr-content">
+                <div class="qr-text">
+                    <span class="section-badge">INNOVACIÓN DIGITAL</span>
+                    <h2 class="section-title">
+                        Menús Digitales que <span class="gradient-text">Venden Más</span>
+                    </h2>
+                    <p class="section-description">
+                        Olvídate del papel para siempre. Nuestros menús digitales con códigos QR no solo modernizan 
+                        tu restaurante, sino que aumentan las ventas con recomendaciones inteligentes y actualizaciones instantáneas.
+                    </p>
+                    
+                    <div class="qr-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon green"></div>
+                            <div>
+                                <h4>Sin Contacto, Más Higiene</h4>
+                                <p>Experiencia 100% digital que tus clientes amarán</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon red"></div>
+                            <div>
+                                <h4>Actualizaciones Instantáneas</h4>
+                                <p>Cambia precios y productos en tiempo real</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon blue"></div>
+                            <div>
+                                <h4>Recomendaciones que Venden</h4>
+                                <p>IA que sugiere complementos y aumenta el ticket promedio</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg">Explorar Menús Digitales</button>
+                </div>
+                <div class="qr-visual">
+                    <div class="phone-mockup">
+                        <img src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Menú digital en smartphone">
+                        <div class="qr-code">
+                            <div class="qr-pattern"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="urgency">
+        <div class="container">
+            <div class="urgency-content">
+                <span class="urgency-badge">⏰ NO ESPERES MÁS</span>
+                <h2 class="section-title text-white">
+                    Cada día sin Servalta POS es un día de <span class="text-red">oportunidades perdidas</span>
+                </h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">$45,000+</div>
+                        <h3>Pérdidas Mensuales</h3>
+                        <p>Los errores manuales y la ineficiencia te cuestan miles en ventas potenciales cada mes.</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">65%</div>
+                        <h3>Clientes Perdidos</h3>
+                        <p>Los clientes no regresan después de experiencias negativas por demoras y errores.</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20+ hrs</div>
+                        <h3>Tiempo Desperdiciado</h3>
+                        <p>Tu equipo pierde horas en procesos que podrían automatizarse completamente.</p>
+                    </div>
+                </div>
+                
+                <div class="urgency-cta">
+                    <p class="urgency-proof">
+                        Los restaurantes que implementan Servalta POS reportan un <strong>aumento del 32% en ventas</strong> 
+                        y una <strong>reducción del 48% en errores</strong> en los primeros 90 días.
+                    </p>
+                    <button class="btn btn-primary btn-lg">Programa una Demostración Hoy</button>
+                    <p class="urgency-note">Implementación en 48 horas • Sin contratos largos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="why-us" class="comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    ¿Por qué elegir <span class="gradient-text">Servalta</span>?
+                </h2>
+                <p class="section-subtitle">
+                    No todos los sistemas POS son iguales. Descubre por qué los restaurantes más exitosos confían en Servalta.
+                </p>
+            </div>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Características</th>
+                            <th class="servalta-col">Servalta POS</th>
+                            <th>Otros sistemas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diseñado específicamente para restaurantes mexicanos</td>
+                            <td class="servalta-col"><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Menús digitales con códigos QR</td>
+                            <td class="servalta-col"><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Gestión avanzada de ingredientes y variantes</td>
+                            <td class="servalta-col"><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Programa de fidelización integrado</td>
+                            <td class="servalta-col"><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Soporte técnico local 24/7</td>
+                            <td class="servalta-col"><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sin contratos a largo plazo</td>
+                            <td class="servalta-col"><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Implementación en 48 horas</td>
+                            <td class="servalta-col"><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="comparison-cta">
+                    <p>Servalta POS está diseñado específicamente para las necesidades de los restaurantes mexicanos</p>
+                    <button class="btn btn-primary">Obtén tu demostración exclusiva</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-white">
+                    Casos de <span class="text-red">Éxito Real</span>
+                </h2>
+                <p class="section-subtitle text-gray">
+                    Escucha a los propietarios de restaurantes que ya están creciendo con Servalta POS.
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        "En 3 meses, nuestras ventas aumentaron 35% y el tiempo de preparación se redujo a la mitad. 
+                        El sistema de menús QR es un éxito total con nuestros clientes jóvenes."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Miguel Rodríguez</strong>
+                            <span>Propietario, La Costera</span>
+                            <em>Ciudad de México</em>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        "El soporte 24/7 ha sido invaluable. Capacitar personal nuevo ahora toma horas en lugar de días. 
+                        El dashboard nos da insights que nos ayudan a planificar mejor."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Ana González</strong>
+                            <span>Gerente, Cantina Mexicana</span>
+                            <em>Guadalajara</em>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        "La facilidad de uso es impresionante. Ya no gastamos en imprimir menús y podemos cambiar 
+                        ofertas en segundos. ROI recuperado en menos de 4 meses."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Carlos Vega</strong>
+                            <span>Dueño, Sabores del Mar</span>
+                            <em>Monterrey</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Planes <span class="gradient-text">Flexibles</span> para tu Crecimiento
+                </h2>
+                <p class="section-subtitle">
+                    Encuentra el plan perfecto para tu restaurante. Todos incluyen 30 días de prueba gratuita.
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Básico</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">999</span>
+                        <span class="period">MXN/mes</span>
+                    </div>
+                    <p class="plan-description">Ideal para restaurantes pequeños</p>
+                    
+                    <ul class="features-list">
+                        <li><span class="check">✓</span> 1 terminal POS</li>
+                        <li><span class="check">✓</span> Dashboard básico</li>
+                        <li><span class="check">✓</span> Menú QR</li>
+                        <li><span class="check">✓</span> Gestión de órdenes</li>
+                        <li><span class="check">✓</span> Soporte por email</li>
+                    </ul>
+                    
+                    <button class="btn btn-outline">Comenzar Gratis</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Más Popular</div>
+                    <h3>Premium</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">1,499</span>
+                        <span class="period">MXN/mes</span>
+                    </div>
+                    <p class="plan-description">La solución perfecta para la mayoría</p>
+                    
+                    <ul class="features-list">
+                        <li><span class="check">✓</span> 3 terminales POS</li>
+                        <li><span class="check">✓</span> Dashboard avanzado</li>
+                        <li><span class="check">✓</span> Menú QR personalizable</li>
+                        <li><span class="check">✓</span> Módulo de cocina</li>
+                        <li><span class="check">✓</span> Gestión de inventario</li>
+                        <li><span class="check">✓</span> Fidelización de clientes</li>
+                        <li><span class="check">✓</span> Soporte 24/7</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary">Comenzar 30 Días Gratis</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Empresarial</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">2,999</span>
+                        <span class="period">MXN/mes</span>
+                    </div>
+                    <p class="plan-description">Para cadenas y alto volumen</p>
+                    
+                    <ul class="features-list">
+                        <li><span class="check">✓</span> Terminales POS ilimitadas</li>
+                        <li><span class="check">✓</span> Análisis avanzado</li>
+                        <li><span class="check">✓</span> Personalización completa</li>
+                        <li><span class="check">✓</span> Integración APIs</li>
+                        <li><span class="check">✓</span> Soporte prioritario 24/7</li>
+                        <li><span class="check">✓</span> Capacitación en sitio</li>
+                    </ul>
+                    
+                    <button class="btn btn-outline">Contactar Ventas</button>
+                </div>
+            </div>
+            
+            <p class="pricing-note">
+                Todos los precios son mensuales. Facturación anual disponible con 20% de descuento.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="demo" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <span class="cta-badge">OFERTA ESPECIAL</span>
+                    <h2 class="section-title text-white">
+                        30 días de prueba <span class="text-red">sin compromisos</span>
+                    </h2>
+                    <p class="cta-description">
+                        Prueba Servalta POS sin riesgos. Implementación completa, capacitación para tu equipo 
+                        y soporte premium por 30 días. Si no estás satisfecho, no pagas nada.
+                    </p>
+                    
+                    <div class="cta-benefits">
+                        <div class="benefit">
+                            <div class="benefit-dot"></div>
+                            <span>Implementación en 48 horas</span>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-dot"></div>
+                            <span>Capacitación gratuita para tu equipo</span>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-dot"></div>
+                            <span>Soporte técnico 24/7</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg">Programa tu demostración</button>
+                </div>
+                
+                <div class="cta-form">
+                    <form class="demo-form" id="demoForm">
+                        <h3>Solicita tu demo personalizada</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business">Nombre de tu restaurante</label>
+                            <input type="text" id="business" name="business" placeholder="Nombre de tu negocio" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Solicitar Demo Gratuita</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Servalta<span class="brand-accent">POS</span></h3>
+                    <p>El sistema de punto de venta revolucionario diseñado específicamente para restaurantes mexicanos.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">🌐</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Soluciones</h4>
+                        <a href="#">Sistema POS</a>
+                        <a href="#">Dashboard</a>
+                        <a href="#">Gestión de Cocina</a>
+                        <a href="#">Menús Digitales</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Empresa</h4>
+                        <a href="#">Acerca de</a>
+                        <a href="#">Clientes</a>
+                        <a href="#">Testimonios</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Soporte</h4>
+                        <a href="#">Centro de Ayuda</a>
+                        <a href="#">Documentación</a>
+                        <a href="#">Estado del Sistema</a>
+                        <a href="#">API</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Servalta POS. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
